@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "/home/polyon/.dotnet/store/|arch|/|tfm|",
+      "/home/polyon/.nuget/packages"
+    ]
+  }
+}
