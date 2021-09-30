@@ -9,7 +9,7 @@ namespace MineApi.Data
 {
     public class WorkExpContext: DbContext
     {
-        public WorkExpContext(DbContextOptions options): base(options)
+        public WorkExpContext(DbContextOptions<WorkExpContext> options): base(options)
         {
 
         }

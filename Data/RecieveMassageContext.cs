@@ -9,7 +9,7 @@ namespace MineApi.Data
 {
     public class RecieveMassageContext: DbContext
     {
-        public RecieveMassageContext(DbContextOptions options): base(options)
+        public RecieveMassageContext(DbContextOptions<RecieveMassageContext> options): base(options)
         {
 
         }

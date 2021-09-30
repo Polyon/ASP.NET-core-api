@@ -9,7 +9,7 @@ namespace MineApi.Data
 {
     public class SocialMediaContext: DbContext
     {
-        public SocialMediaContext(DbContextOptions options): base(options)
+        public SocialMediaContext(DbContextOptions<SocialMediaContext> options): base(options)
         {
 
         }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/run/media/polyon/New Volume/DotNet/MineApi/MineApi.csproj": {}
+    "/home/polyon/Desktop/Programming/CSharp/MineApi/MineApi.csproj": {}
   },
   "projects": {
-    "/run/media/polyon/New Volume/DotNet/MineApi/MineApi.csproj": {
+    "/home/polyon/Desktop/Programming/CSharp/MineApi/MineApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/run/media/polyon/New Volume/DotNet/MineApi/MineApi.csproj",
+        "projectUniqueName": "/home/polyon/Desktop/Programming/CSharp/MineApi/MineApi.csproj",
         "projectName": "MineApi",
-        "projectPath": "/run/media/polyon/New Volume/DotNet/MineApi/MineApi.csproj",
+        "projectPath": "/home/polyon/Desktop/Programming/CSharp/MineApi/MineApi.csproj",
         "packagesPath": "/home/polyon/.nuget/packages/",
-        "outputPath": "/run/media/polyon/New Volume/DotNet/MineApi/obj/",
+        "outputPath": "/home/polyon/Desktop/Programming/CSharp/MineApi/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/polyon/.nuget/NuGet/NuGet.Config"
@@ -42,31 +42,53 @@
               "target": "Package",
               "version": "[5.0.7, )"
             },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.10, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[5.0.10, )"
+            },
             "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
               "target": "Package",
               "version": "[5.0.7, )"
             },
+            "Microsoft.CodeAnalysis.CSharp.Workspaces": {
+              "target": "Package",
+              "version": "[4.0.0-4.final, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[5.0.9, )"
+              "version": "[5.0.10, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
-              "version": "[5.0.7, )"
+              "version": "[5.0.10, )"
             },
             "Microsoft.EntityFrameworkCore.InMemory": {
               "target": "Package",
-              "version": "[5.0.9, )"
+              "version": "[5.0.10, )"
             },
             "Microsoft.EntityFrameworkCore.Relational": {
               "target": "Package",
-              "version": "[5.0.7, )"
+              "version": "[5.0.10, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[5.0.7, )"
+              "version": "[5.0.10, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Tools": {
+              "target": "Package",
+              "version": "[2.0.4, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGenerators.Mvc": {
               "target": "Package",
               "version": "[5.0.2, )"
             },

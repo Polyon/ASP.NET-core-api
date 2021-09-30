@@ -9,7 +9,7 @@ namespace MineApi.Data
 {
     public class AuthAdminContext: DbContext
     {
-        public AuthAdminContext(DbContextOptions options): base(options)
+        public AuthAdminContext(DbContextOptions<AuthAdminContext> options): base(options)
         {
 
         }

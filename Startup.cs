@@ -11,6 +11,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using Microsoft.EntityFrameworkCore;
+using MineApi.Models;
+using MineApi.Data;
 
 namespace MineApi
 {
@@ -28,6 +31,18 @@ namespace MineApi
         {
 
             services.AddControllers();
+            services.AddDbContext<AboutMeContext>(options => options.UseSqlServer(Configuration.GetConnectionString("WebDataString")));
+            services.AddDbContext<AcademicRecordContext>(options => options.UseSqlServer(Configuration.GetConnectionString("WebDataString")));
+            services.AddDbContext<AuthAdminContext>(options => options.UseSqlServer(Configuration.GetConnectionString("WebDataString")));
+            services.AddDbContext<OtherInterestContext>(options => options.UseSqlServer(Configuration.GetConnectionString("WebDataString")));
+            services.AddDbContext<PersonalDataContext>(options => options.UseSqlServer(Configuration.GetConnectionString("WebDataString")));
+            services.AddDbContext<ProjectDataContext>(options => options.UseSqlServer(Configuration.GetConnectionString("WebDataString")));
+            services.AddDbContext<RecieveMassageContext>(options => options.UseSqlServer(Configuration.GetConnectionString("WebDataString")));
+            services.AddDbContext<SendMassageContext>(options => options.UseSqlServer(Configuration.GetConnectionString("WebDataString")));
+            services.AddDbContext<SkillDataContext>(options => options.UseSqlServer(Configuration.GetConnectionString("WebDataString")));
+            services.AddDbContext<SocialMediaContext>(options => options.UseSqlServer(Configuration.GetConnectionString("WebDataString")));
+            services.AddDbContext<TrainingDataContext>(options => options.UseSqlServer(Configuration.GetConnectionString("WebDataString")));
+            services.AddDbContext<WorkExpContext>(options => options.UseSqlServer(Configuration.GetConnectionString("WebDataString")));
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "MineApi", Version = "v1" });

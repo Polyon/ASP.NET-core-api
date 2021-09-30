@@ -9,7 +9,7 @@ namespace MineApi.Data
 {
     public class SkillDataContext: DbContext
     {
-        public SkillDataContext(DbContextOptions options): base(options)
+        public SkillDataContext(DbContextOptions<SkillDataContext> options): base(options)
         {
 
         }

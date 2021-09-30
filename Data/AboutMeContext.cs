@@ -9,7 +9,7 @@ namespace MineApi.Data
 {
     public class AboutMeContext: DbContext
     {
-        public AboutMeContext(DbContextOptions options): base(options)
+        public AboutMeContext(DbContextOptions<AboutMeContext> options): base(options)
         {
 
         }

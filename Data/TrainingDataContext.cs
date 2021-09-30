@@ -9,7 +9,7 @@ namespace MineApi.Data
 {
     public class TrainingDataContext: DbContext
     {
-        public TrainingDataContext(DbContextOptions options): base(options)
+        public TrainingDataContext(DbContextOptions<TrainingDataContext> options): base(options)
         {
 
         }

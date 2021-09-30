@@ -9,7 +9,7 @@ namespace MineApi.Data
 {
     public class PersonalDataContext: DbContext
     {
-        public PersonalDataContext(DbContextOptions options): base(options)
+        public PersonalDataContext(DbContextOptions<PersonalDataContext> options): base(options)
         {
 
         }

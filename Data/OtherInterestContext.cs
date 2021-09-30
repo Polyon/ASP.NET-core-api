@@ -9,7 +9,7 @@ namespace MineApi.Data
 {
     public class OtherInterestContext: DbContext
     {
-        public OtherInterestContext(DbContextOptions options): base(options)
+        public OtherInterestContext(DbContextOptions<OtherInterestContext> options): base(options)
         {
 
         }

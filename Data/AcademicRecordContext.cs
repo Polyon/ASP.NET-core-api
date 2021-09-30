@@ -9,7 +9,7 @@ namespace MineApi.Data
 {
     public class AcademicRecordContext: DbContext
     {
-        public AcademicRecordContext(DbContextOptions options): base(options)
+        public AcademicRecordContext(DbContextOptions<AcademicRecordContext> options): base(options)
         {
             
         }

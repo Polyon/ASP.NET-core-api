@@ -9,7 +9,7 @@ namespace MineApi.Data
 {
     public class ProjectDataContext: DbContext
     {
-        public ProjectDataContext(DbContextOptions options): base(options)
+        public ProjectDataContext(DbContextOptions<ProjectDataContext> options): base(options)
         {
 
         }
